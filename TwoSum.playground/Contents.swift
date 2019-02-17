@@ -1,5 +1,25 @@
 import UIKit
 
+//1.
+/*
+class Solution1 {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var array = [Int]()
+        for (index, value) in nums.enumerated() {
+            for n in (index + 1 ... nums.count - 1) {
+                if (value + nums[n] == target) {
+                    array.append(index)
+                    array.append(n)
+                    return array
+                }
+            }
+        }
+        return []
+    }
+}
+*/
+
+//2.
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var array = [Int](repeatElement(0, count:2))
